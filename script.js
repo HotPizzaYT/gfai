@@ -217,8 +217,8 @@ function enterCheck(event){
    }
  }
 function intChat(mess, name){
-  document.getElementById("output").innerHTML += 
-    `<b><u>You:</u></b> ${mess}<br><b><u>${name}:</u></b> ${resp(mess)}<br>`;
+  document.getElementById("output").innerHTML = 
+    `<b><u>${name}:</u></b> ${resp(mess)}<br><b><u>${player}:</u></b> ${mess}<br>`+ document.getElementById("output").innerHTML;
 }
 function addLove(val){
   var res = parseInt(document.getElementById("lom").innerHTML) + val;
