@@ -365,19 +365,20 @@ function resp(mess){
   var ranc = conf[Math.floor(Math.random() * conf.length)];
   return ranc;
   }
-    
-  }
-  }
+   }
     }
     }
   }
-    }
-    }
-    }
+  }
     }
     }
   }
     }
+    }
+    }
+    }
+    }
+  }
     }
     }
     }
