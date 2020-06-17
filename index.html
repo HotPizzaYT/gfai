@@ -40,8 +40,15 @@
     
     <br>
     
-    <input type="checkbox" class="filled-in"  onclick="nsfwChk()" id="nsfw"><script src="script.js"></script>
-</body></input> NSFW
+     <p>
+      <label>
+        <input type="checkbox" class="filled-in"  onclick="nsfwChk()" id="nsfw">
+        <span>NSFW</span>
+      </label>
+    </p>
+    
+    <script src="script.js"></script>
+    
     <div id="lm" style="color: #ff8080">Love-ometer: <span id="lom">0</span></div>
     <input type="text" id="msg" onkeydown="enterCheck(event)" placeholder="Send message"></input>
   
@@ -49,7 +56,7 @@
   
   
   <button class="waves-effect waves-light btn" onclick="document.getElementById('output').innerHTML = `<b>Hi, I'm ${gff} ${gfm} ${gfl}, I'm a ${age} year old female.<br>My hobbies include ${hobSt}.<br>My appearance is ${appearance}.</b><br>`;">introTest</button>
-  <br> <button class="waves-effect waves-light btn" onclick='window.spam = setInterval(function(){ intChat(document.getElementById("msg").value, window.gff); }, 50);'>startSpam</button> <button onclick='clearInterval(window.spam);'>stopSpam</button>
+  <br> <button class="waves-effect waves-light btn" onclick='window.spam = setInterval(function(){ intChat(document.getElementById("msg").value, window.gff); }, 50);'>startSpam</button> <button class="waves-effect waves-light btn" onclick='clearInterval(window.spam);'>stopSpam</button>
  
 
   <div id="output" onload="document.getElementById('output').innerHTML = `<b>Hi, I'm ${gff} ${gfm} ${gfl}, I'm a ${age} year old female.</b><br>`;" style=" height: 200px; overflow-y: scroll;"></div>
