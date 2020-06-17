@@ -216,11 +216,8 @@ function addLove(val) {
     document.getElementById("lom").innerHTML = res.toString();
 }
 function resp(mess) {
-    //  you need to clean this up by using a switch case, or keep like this you choose
-  
-    // i need randomized responses
 
-    // i fixed it and cleaned it up, happy now?
+    // this is dumb ai
 
     if (mess.toLowerCase().includes("i love you")) {
         addLove(4);
