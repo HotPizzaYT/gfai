@@ -354,6 +354,7 @@ function resp(mess){
   } else {
     return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
   }
+      } else {
       if(mess.indexOf("!rd ") == 0){
   gsub(mess.substr(3, mess.length));
   currentMeme = Math.floor(Math.random() * memeImages.length);
