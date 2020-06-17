@@ -226,20 +226,21 @@ function addLove(val){
 function resp(mess){
   
 // i need randomized responses
+// really?
   
   if(mess.toLowerCase().includes("i love you")){
     addLove(4);
-    return `i love you too`;
+    return `i hate you too`;
   } else {
   if(mess.toLowerCase().includes("what") && mess.toLowerCase().includes("name")){
     return `I'm ${gff} ${gfm} ${gfl}, age ${age}.`;
   } else {
   if(mess.toLowerCase().includes("can") && mess.toLowerCase().includes("have")  && mess.toLowerCase().includes("selfie")){
-    return `Sorry, I can't send you any selfies. I'm an AI.`;
+    return `Sorry, I can't send you any selfies. I'm an dumb AI.`;
   } else {
   if(mess.toLowerCase().includes("can't") && mess.toLowerCase().includes("live")  && mess.toLowerCase().includes("without you")){
     addLove(8);
-    return `I can't live without you either o//.//o`;
+    return `I can live without you either o//.//o`;
   } else {
   if(mess == ("<3")){
     return `<3`;
@@ -251,17 +252,17 @@ function resp(mess){
     return ran;
   } else {
   if(mess.toLowerCase().includes("fortnite")){
-    var fn = ["Ugh... I really hate that game", "But Fortnite is so stupid!", "Don't get addicted to Fortnite babe..."];
+    var fn = ["Yeah! I really love that game", "Fortnite is so amazing!", "Let's get addicted to Fortnite babe..."];
     var ran2 = fn[Math.floor(Math.random() * fn.length)];
     return ran2;
   } else {
-  if(mess.toLowerCase().includes("jotaro")){
+  if(mess.toLowerCase().includes("wat")){
     var jtro = ["yare yare daze <3<3<3", "i love jojo", "i wish stone ocean anime was out", "<3"];
     var ran3 = jtro[Math.floor(Math.random() * jtro.length)];
     return ran3;
   } else {
   if(mess.toLowerCase() == "hi" || mess.toLowerCase() == "hello" || mess.toLowerCase() == "sup"){
-    var grt = ["hello <3<3<3", "hiiii", "hello my love", "wassup homeboy", "whats up cutsie?", "hows it hanging?", "how's my favorite bf doing", `hello, i'm ${gff}, and i'm ${age}`];
+    var grt = ["hello", "hiiii", "hello", "wassup", "whats up", "hows it hanging?", "hi.", `hello, i'm ${gff}, and i'm ${age}`];
     var ran4 = grt[Math.floor(Math.random() * grt.length)];
     return ran4;
   } else {
@@ -300,7 +301,7 @@ function resp(mess){
    currentMeme = Math.floor(Math.random() * memeImages.length);
    return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
   } else {
-    return `<font color="red">Sorry, ${player}, NSFW is turned off by default.</font>`;
+    return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
   }
   } else {
   if(mess == "!mc"){
@@ -323,7 +324,7 @@ function resp(mess){
    currentMeme = Math.floor(Math.random() * memeImages.length);
    return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
   } else {
-    return `<font color="red">Sorry, ${player}, NSFW is turned off by default.</font>`;
+    return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
   }
   } else {
   if(mess == "!p"){
@@ -332,7 +333,7 @@ function resp(mess){
    currentMeme = Math.floor(Math.random() * memeImages.length);
    return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
   } else {
-    return `<font color="red">Sorry, ${player}, NSFW is turned off by default.</font>`;
+    return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
   }
   } else {
     if(mess == "!c"){
@@ -341,7 +342,7 @@ function resp(mess){
    currentMeme = Math.floor(Math.random() * memeImages.length);
    return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
   } else {
-    return `<font color="red">Sorry, ${player}, NSFW is turned off by default.</font>`;
+    return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
   }
   } else {
     if(mess == "!b"){
@@ -350,7 +351,7 @@ function resp(mess){
    currentMeme = Math.floor(Math.random() * memeImages.length);
    return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
   } else {
-    return `<font color="red">Sorry, ${player}, NSFW is turned off by default.</font>`;
+    return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
   }
   } else {
   var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
