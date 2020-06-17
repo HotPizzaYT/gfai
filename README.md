@@ -11,6 +11,24 @@ Say hello. Certain words can trigger the bot.
 
 !mc ....... Minecraft
 
+!surreal .. Surreal Memes
+
+《Other commands》
+
+!say ...... Say whatever
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
 .
 
 .
@@ -42,5 +60,9 @@ Say hello. Certain words can trigger the bot.
 !p .... porn gifs
 
 !nsfw . NSFW subreddit
+
+!b .... Boobs
+
+!hentai Hentai
 
 More NSFW commands coming soon...
