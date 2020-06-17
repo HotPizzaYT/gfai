@@ -4,18 +4,29 @@ An Ai that you can date and browse memes with
 Say hello. Certain words can trigger the bot.
 
 《Subreddit commands》
+
 !techni ... technicallythetruth
+
 !engrish .. engrish
+
 !mc ....... Minecraft
 
 .
+
 .
+
 .
+
 .
+
 .
+
 .
+
 .
+
 .
+
 .
 .
 .
@@ -23,7 +34,13 @@ Say hello. Certain words can trigger the bot.
 .
 
 《NSFW commands》
+
 !c .... creampie
+
 !v .... vagina
+
 !p .... porn gifs
+
 !nsfw . NSFW subreddit
+
+More NSFW commands coming soon...
