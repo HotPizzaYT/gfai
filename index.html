@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Created Using Easy HTML v1.4.5 -->
+<!-- https://play.google.com/store/apps/details?id=ak.andro.easyhtml -->
+
+
+<html>
+  <head>
+    <title>BotAndDate 1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    nsfw = false;
+    gff = "Alice";
+    gfm = "D."
+    gfl = "Eaton";
+    age = "[null]";
+    player = "PlaceName";
+    likeGame = ["Minecraft", "Haxornite", "Portal 2", "Portal"];
+    likeTopic = ["love", "cartoons", "Futurama", "Simpsons"];
+    hobSt = "drawing, watching anime, simpsons, jojo, and futurama";
+    appearance = "blonde, blue eyes with glasses"
+    </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <h1>
+    Need help?
+    </h1>
+    <span style="color: #808080">
+      Go head over to <a href="https://github.com/hotpizzayt/gfai/readme.md">the project readme file</a>
+ 
+      
+    </span>
+    
+    <br>
+    
+    <input type="checkbox" onclick="nsfwChk()" id="nsfw"><script src="script.js"></script>
+</body></input> NSFW
+    <div id="lm" style="color: #ff8080">Love-ometer: <span id="lom">0</span></div>
+    <input type="text" id="msg" onkeydown="enterCheck(event)" placeholder="Send message"></input>
+  
+  
+  
+  
+  <button onclick="document.getElementById('output').innerHTML = `<b>Hi, I'm ${gff} ${gfm} ${gfl}, I'm a ${age} year old female.<br>My hobbies include ${hobSt}.<br>My appearance is ${appearance}.</b><br>`;">introTest</button>
+  
+ 
+
+  <div id="output" onload="document.getElementById('output').innerHTML = `<b>Hi, I'm ${gff} ${gfm} ${gfl}, I'm a ${age} year old female.</b><br>`;" style=" height: 200px; overflow-y: scroll;"></div>
+  <!-- End your code here --></html>
+  </body>
+</html>
