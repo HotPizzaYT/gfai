@@ -354,6 +354,11 @@ function resp(mess){
   } else {
     return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
   }
+      if(mess.toLowerCase().indexOf("!rd ") == 0){
+  gsub(mess.substring(3, mess.length););
+  currentMeme = Math.floor(Math.random() * memeImages.length);
+  return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
+ 
   } else {
   var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
   var ranc = conf[Math.floor(Math.random() * conf.length)];
@@ -371,6 +376,7 @@ function resp(mess){
     }
     }
   }
+    }
     }
     }
     }
