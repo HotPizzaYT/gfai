@@ -5,6 +5,18 @@
 // Reddit Meme API created by Furious
 var memeImages;
 
+
+function genLink(){
+          var text = "";
+ var possible = "GQUNnbqsx7269";
+
+ for (var i = 0; i < 5; i++){
+   text += possible.charAt(Math.floor(Math.random() * possible.length));
+ }
+return "<a href='https://goo.gl/" + text + "'>Here is your random link</a>;
+          
+      }
+
 function nsfwChk() {
     if (document.getElementById('nsfw').checked) {
         nsfw = true;
@@ -345,9 +357,13 @@ function resp(mess) {
                                                                                                 return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
                                                                                             }
                                                                                         } else {
-                                                                                            var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
-                                                                                            var ranc = conf[Math.floor(Math.random() * conf.length)];
-                                                                                            return ranc;
+                                                                                            if (mess == "!googl"){
+                                                                                                genLink();
+                                                                                            } else {
+                                                                                                var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
+                                                                                                var ranc = conf[Math.floor(Math.random() * conf.length)];
+                                                                                                return ranc;
+                                                                                            }
                                                                                         }
                                                                                     }
                                                                                 }
