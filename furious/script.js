@@ -219,7 +219,12 @@ function UpdateChat()
 {
     var output = document.getElementById("output");
 
-    fetch("https://haxornite.ml/ai/ai.html").then(function(response) {
+    fetch("https://haxornite.ml/ai/ai.html",  {
+        method: 'GET',
+        mode: 'cors', 
+        cache: 'no-cache', 
+        credentials: 'same-origin', 
+      }).then(function(response) {
         return response.text().then(function(text) {
           output.innerHTML = text;
         });
