@@ -213,7 +213,7 @@ function generateMC() {
 
 // generateMC();
 
-window.setInterval(5000, function(){UpdateChat()});
+window.setInterval(function(){UpdateChat()}, 5000);
 
 function UpdateChat()
 {
