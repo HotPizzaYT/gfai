@@ -7,15 +7,15 @@ var memeImages;
 
 
 function genLink(){
-          var text = "";
- var possible = "GQUNnbqsx7269";
+          var text = "";
+ var possible = "GQUNnbqsx7269";
 
- for (var i = 0; i < 5; i++){
-   text += possible.charAt(Math.floor(Math.random() * possible.length));
- }
-return "<a href='https://goo.gl/" + text + "'>Here is your random link</a>;
-          
-      }
+ for (var i = 0; i < 5; i++){
+   text += possible.charAt(Math.floor(Math.random() * possible.length));
+ }
+return `<a href="https://goo.gl/${text}">Here is your random link</a>`;
+          
+      }
 
 function nsfwChk() {
     if (document.getElementById('nsfw').checked) {
@@ -387,7 +387,3 @@ function resp(mess) {
         }
     }
 }
-
-
-
-
