@@ -6,16 +6,16 @@
 var memeImages;
 
 
-function genLink(){
-          var text = "";
- var possible = "GQUNnbqsx7269";
+function genLink() {
+    var text = "";
+    var possible = "GQUNnbqsx7269";
 
- for (var i = 0; i < 5; i++){
-   text += possible.charAt(Math.floor(Math.random() * possible.length));
- }
-return `<a href="https://goo.gl/${text}">Here is your random link</a>`;
-          
-      }
+    for (var i = 0; i < 5; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return `<a href="https://goo.gl/${text}">Here is your random link</a>`;
+
+}
 
 function nsfwChk() {
     if (document.getElementById('nsfw').checked) {
@@ -223,51 +223,14 @@ function resp(mess) {
                                                                             var waxor = ["waxor", "haxor waxor", "staxorfaxor"];
                                                                             var waxran = waxor[Math.floor(Math.random() * waxor.length)];
                                                                             return waxran;
+
                                                                         } else {
-                                                                            if (mess == "!v") {
-                                                                                if (nsfw == true) {
-                                                                                    generateV();
-                                                                                    currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                                    return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
-                                                                                } else {
-                                                                                    return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
-                                                                                }
+                                                                            if (mess == "!googl") {
+                                                                                return genLink();
                                                                             } else {
-                                                                                if (mess == "!p") {
-                                                                                    if (nsfw == true) {
-                                                                                        gsub("porngif");
-                                                                                        currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                                        return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
-                                                                                    } else {
-                                                                                        return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
-                                                                                    }
-                                                                                } else {
-                                                                                    if (mess == "!c") {
-                                                                                        if (nsfw == true) {
-                                                                                            generateC();
-                                                                                            currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                                            return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
-                                                                                        } else {
-                                                                                            return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
-                                                                                        }
-                                                                                    } else {
-                                                                                        if (mess == "!b") {
-                                                                                            if (nsfw == true) {
-                                                                                                generateBoob();
-                                                                                                currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                                                return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
-                                                                                            } else {
-                                                                                                return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
-                                                                                            }
-                                                                                        } else {
-                
-                                                                                                
-              return respt(mess);
-                                                                                            
-                                                                                            
-                                                                                        }
-                                                                                    }
-                                                                                }
+                                                                                var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
+                                                                                var ranc = conf[Math.floor(Math.random() * conf.length)];
+                                                                                return ranc;
                                                                             }
                                                                         }
                                                                     }
@@ -288,12 +251,4 @@ function resp(mess) {
         }
     }
 }
-function respt(mess){
-  if(mess === "!googl"){
-   return genLink();
-  } else {
-var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
-var ranc = conf[Math.floor(Math.random() * conf.length)];
-return ranc;
-  }
-}
+
