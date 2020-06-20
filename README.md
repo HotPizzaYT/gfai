@@ -51,7 +51,7 @@ Say hello. Certain words can trigger the bot.
 .
 .
 
-《NSFW commands》
+《NSFW commands (my fav)》
 
 !c .... creampie
 
