@@ -356,7 +356,11 @@ function resp(mess) {
                                                                                             } else {
                                                                                                 return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
                                                                                             }
+} else {
+if (mess.toLowerCase() === "googl!"){
+return genLink();
                                                                                         } else {
+
                 
                                                                                                 
                                                                                             // respt();
@@ -366,6 +370,8 @@ function resp(mess) {
                                                                                             
                                                                                         }
                                                                                     }
+}
+}
                                                                                 }
                                                                             }
                                                                         }
