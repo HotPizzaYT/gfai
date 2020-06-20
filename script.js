@@ -1,8 +1,10 @@
-// This AI doesn't even have machine learning... so is it an AI?
+// This AI doesn't even have machine learning... so is it an AI? ~Furious
 
 // Script for AI
 
 // Reddit Meme API created by Furious
+// All credits to him, he has helped me to create this AI
+
 var memeImages;
 
 
@@ -251,4 +253,3 @@ function resp(mess) {
         }
     }
 }
-
