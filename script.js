@@ -236,6 +236,20 @@ if (mess == “furious”) {
 return “You know him? Wow!”
 
 } else {
+
+if (mess.toLowerCase().includes(“like”) || mess.toLowerCase().includes(“me”)) {
+
+return “Yes!”;
+
+} else {
+
+if(mess.toLowerCase().includes(“like”)) {
+
+var obj = mess.replace(“do”,””).replace(“do”,””).replace(“you”,””) replace(“like”,””).replace(“it”,””).replace(“i”,””).replace(“know”,””);
+
+return `I love ${obj}!!!`;
+
+}
                                                                                 var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
                                                                                 var ranc = conf[Math.floor(Math.random() * conf.length)];
                                                                                 return ranc;
