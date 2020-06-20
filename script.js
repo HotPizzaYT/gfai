@@ -230,6 +230,12 @@ function resp(mess) {
                                                                             if (mess == "!googl") {
                                                                                 return genLink();
                                                                             } else {
+
+if (mess == “furious”) {
+
+return “You know him? Wow!”
+
+} else {
                                                                                 var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
                                                                                 var ranc = conf[Math.floor(Math.random() * conf.length)];
                                                                                 return ranc;
