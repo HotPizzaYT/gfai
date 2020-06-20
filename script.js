@@ -249,7 +249,7 @@ var obj = mess.replace(“do”,””).replace(“do”,””).replace(“you�
 
 return `I love ${obj}!!!`;
 
-}
+} else {
                                                                                 var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
                                                                                 var ranc = conf[Math.floor(Math.random() * conf.length)];
                                                                                 return ranc;
