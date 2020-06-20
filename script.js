@@ -231,28 +231,31 @@ function resp(mess) {
                                                                                 return genLink();
                                                                             } else {
 
-if (mess == “furious”) {
+                                                                                if (mess.toLowerCase().includes("furious")) {
 
-return “You know him? Wow!”
+                                                                                    return "You know him? Wow!"
 
-} else {
+                                                                                } else {
 
-if (mess.toLowerCase().includes(“like”) || mess.toLowerCase().includes(“me”)) {
+                                                                                    if (mess.toLowerCase().includes("like") || mess.toLowerCase().includes("me")) {
 
-return “Yes!”;
+                                                                                        return "Yes!";
 
-} else {
+                                                                                    } else {
 
-if(mess.toLowerCase().includes(“like”)) {
+                                                                                        if (mess.toLowerCase().includes("like")) {
 
-var obj = mess.replace(“do”,””).replace(“do”,””).replace(“you”,””) replace(“like”,””).replace(“it”,””).replace(“i”,””).replace(“know”,””);
+                                                                                            var obj = mess.replace("do ", "").replace("do ", "").replace("you", "") replace("like", "").replace("it", "").replace("i", "").replace("know", "");
 
-return `I love ${obj}!!!`;
+                                                                                            return `I love ${obj}!!!`;
 
-} else {
-                                                                                var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
-                                                                                var ranc = conf[Math.floor(Math.random() * conf.length)];
-                                                                                return ranc;
+                                                                                        } else {
+                                                                                            var conf = [`I don't understand...`, `Please tell me what you mean, ${player}`, `???`, `Huh?`, `I don't quite understand you.`, `I don't know what you're trying to say`, `...?`];
+                                                                                            var ranc = conf[Math.floor(Math.random() * conf.length)];
+                                                                                            return ranc;
+                                                                                        }
+                                                                                    }
+                                                                                }
                                                                             }
                                                                         }
                                                                     }
@@ -270,6 +273,3 @@ return `I love ${obj}!!!`;
                     }
                 }
             }
-        }
-    }
-}
