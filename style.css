@@ -1,7 +1,8 @@
-/* Created Using Easy HTML v1.4.5 */
-/* https://play.google.com/store/apps/details?id=ak.andro.easyhtml */
+html {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: plum;
+}
 
-html
-{
-  font-family: sans-serif;
-  }
+#pink {
+ color: palevioletred;
+}
