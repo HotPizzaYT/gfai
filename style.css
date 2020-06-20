@@ -1,8 +1,12 @@
 html {
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  background-color: plum;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: purple;
 }
 
 #pink {
- color: palevioletred;
+ color: pink;
+}
+
+#header {
+  text-align: center;
 }
