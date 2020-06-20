@@ -1,4 +1,4 @@
-// This AI doesn't even have machine learning... so is it an AI?
+// This AI doesn't even have machine learning... so is it an AI
 
 // Script for AI
 
