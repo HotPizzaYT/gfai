@@ -13,3 +13,15 @@ html {
 #header {
   text-align: center;
 }
+
+.spoiler {
+filter: blur(30px);
+image-rendering: pixelate;
+}
+.spoiler:hover {
+filter: blur(0px);
+}
+.spoiler:focus {
+filter: blur(0px);
+}
+/* fix weird transitions on Chrome: */

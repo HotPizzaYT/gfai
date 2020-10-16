@@ -293,7 +293,7 @@ function resp(mess) {
                                                             if (nsfw == true) {
                                                                 generateNSFW();
                                                                 currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
+                                                                return "<img class='spoiler' src='" + memeImages[currentMeme] + "' height='320' width='320'>";
                                                             } else {
                                                                 return `<font color="red">Sorry, ${player}, NSFW is turned off by default.</font>`;
                                                             }
@@ -302,7 +302,7 @@ function resp(mess) {
                                                                 if (nsfw == true) {
                                                                     generateHen();
                                                                     currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                    return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
+                                                                    return "<img class='spoiler' src='" + memeImages[currentMeme] + "' height='320' width='320'>";
                                                                 } else {
                                                                     return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
                                                                 }
@@ -325,7 +325,7 @@ function resp(mess) {
                                                                                 if (nsfw == true) {
                                                                                     generateV();
                                                                                     currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                                    return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
+                                                                                    return "<img class='spoiler' src='" + memeImages[currentMeme] + "' height='320' width='320'>";
                                                                                 } else {
                                                                                     return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
                                                                                 }
@@ -334,7 +334,7 @@ function resp(mess) {
                                                                                     if (nsfw == true) {
                                                                                         gsub("porngif");
                                                                                         currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                                        return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
+                                                                                        return "<img class='spoiler' src='" + memeImages[currentMeme] + "' height='320' width='320'>";
                                                                                     } else {
                                                                                         return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
                                                                                     }
@@ -343,7 +343,7 @@ function resp(mess) {
                                                                                         if (nsfw == true) {
                                                                                             generateC();
                                                                                             currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                                            return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
+                                                                                            return "<img class='spoiler' src='" + memeImages[currentMeme] + "' height='320' width='320'>";
                                                                                         } else {
                                                                                             return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
                                                                                         }
@@ -352,7 +352,7 @@ function resp(mess) {
                                                                                             if (nsfw == true) {
                                                                                                 generateBoob();
                                                                                                 currentMeme = Math.floor(Math.random() * memeImages.length);
-                                                                                                return "<img src='" + memeImages[currentMeme] + "' height='320' width='320'>";
+                                                                                                return "<img class='spoiler' src='" + memeImages[currentMeme] + "' height='320' width='320'>";
                                                                                             } else {
                                                                                                 return `<font color="red">Sorry, ${player}, NSFW is turned on by default.</font>`;
                                                                                             }
